@@ -4,12 +4,6 @@ import SeasonDisplay from "./SeasonDisplay";
 import Spinner from "./spinner";
 
 class App extends React.Component {
-  //   constructor(props) {
-  //     super(props); // super is a reference to the parent's constructor function
-
-  //     // this is the only time we do direct assignment to this.state
-  //     this.state = { lat: null, errorMessage: "" };
-  //   }
 
   state = { lat: null, errorMessage: "" };
 
@@ -32,7 +26,6 @@ class App extends React.Component {
     return <Spinner message="Please accept location request" />;
   }
 
-  // try to only have one return statement inside of render, use helper functions for multiple return logic
   render() {
     return <div className="border red">{this.renderContent()}</div>;
   }
